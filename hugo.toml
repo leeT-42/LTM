@@ -1,0 +1,41 @@
+baseURL = 'https://example.org/'
+languageCode = 'vi'
+title = 'Network Programming Blog'
+theme = 'PaperMod'
+
+[params]
+  defaultTheme = "auto"
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  
+  [params.profileMode]
+    enabled = true
+    title = "My Network Blog"
+    subtitle = "Chia sẻ kiến thức Java & JavaScript"
+    imageUrl = ""
+    imageTitle = "Avatar"
+    buttons = [
+      { name = "Blog", url = "/posts" },
+      { name = "About", url = "/about" },
+      { name = "Github", url = "https://github.com/" }
+    ]
+
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 10
+  [[menu.main]]
+    identifier = "blog"
+    name = "Blog"
+    url = "/posts"
+    weight = 20
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about"
+    weight = 30

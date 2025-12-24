@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Socket on Network Programming Blog</title>
+    <link>https://example.org/tags/socket/</link>
+    <description>Recent content in Socket on Network Programming Blog</description>
+    <generator>Hugo -- 0.153.2</generator>
+    <language>vi</language>
+    <lastBuildDate>Tue, 28 May 2024 00:00:00 +0700</lastBuildDate>
+    <atom:link href="https://example.org/tags/socket/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Lập Trình Socket Trong Java</title>
+      <link>https://example.org/posts/socket-programming/</link>
+      <pubDate>Tue, 28 May 2024 00:00:00 +0700</pubDate>
+      <guid>https://example.org/posts/socket-programming/</guid>
+      <description>&lt;h2 id=&#34;1-socket-là-gì&#34;&gt;1. Socket là gì?&lt;/h2&gt;
+&lt;p&gt;Là điểm cuối (endpoint) trong liên kết giao tiếp 2 chiều giữa 2 chương trình chạy trên mạng.&lt;/p&gt;
+&lt;h2 id=&#34;2-mô-hình-client-server&#34;&gt;2. Mô hình Client-Server&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Server&lt;/strong&gt;: Lắng nghe yêu cầu tại một Port cụ thể.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Client&lt;/strong&gt;: Gửi yêu cầu kết nối đến IP và Port của Server.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;3-code-ví-dụ-server&#34;&gt;3. Code Ví Dụ (Server)&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ServerSocket server &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; ServerSocket(5000);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Socket socket &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; server.&lt;span style=&#34;color:#a6e22e&#34;&gt;accept&lt;/span&gt;(); &lt;span style=&#34;color:#75715e&#34;&gt;// Chờ kết nối&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// Đọc/Ghi dữ liệu qua InputStream/OutputStream&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;4-code-ví-dụ-client&#34;&gt;4. Code Ví Dụ (Client)&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Socket socket &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; Socket(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;localhost&amp;#34;&lt;/span&gt;, 5000);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// Gửi yêu cầu&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+  </channel>
+</rss>

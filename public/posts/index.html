@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Posts | Network Programming Blog</title>
+<meta name="keywords" content="">
+<meta name="description" content="Posts - Network Programming Blog">
+<meta name="author" content="">
+<link rel="canonical" href="https://example.org/posts/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.fd5566c526ae48aadabd950798a2dc3568536401560eae5caac3765a42a9e7b5.css" integrity="sha256-/VVmxSauSKravZUHmKLcNWhTZAFWDq5cqsN2WkKp57U=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://example.org/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://example.org/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://example.org/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://example.org/apple-touch-icon.png">
+<link rel="mask-icon" href="https://example.org/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="https://example.org/posts/index.xml" title="rss">
+<link rel="alternate" hreflang="en" href="https://example.org/posts/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><meta property="og:url" content="https://example.org/posts/">
+  <meta property="og:site_name" content="Network Programming Blog">
+  <meta property="og:title" content="Posts">
+  <meta property="og:locale" content="vi">
+  <meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Posts">
+<meta name="twitter:description" content="">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://example.org/posts/"
+    }
+  ]
+}
+</script>
+</head>
+<body class="list" id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://example.org/" accesskey="h" title="Network Programming Blog (Alt + H)">Network Programming Blog</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://example.org/" title="Home">
+                    <span>Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://example.org/posts" title="Blog">
+                    <span class="active">Blog</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://example.org/about" title="About">
+                    <span>About</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+<header class="page-header"><div class="breadcrumbs"><a href="https://example.org/">Trang chủ</a></div>
+  <h1>
+    Posts
+  </h1>
+</header>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Giao Thức HTTP: Methods và Status Codes
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>1. HTTP Methods GET: Lấy dữ liệu. POST: Gửi dữ liệu mới. PUT: Cập nhật toàn bộ. PATCH: Cập nhật một phần. DELETE: Xoá dữ liệu. 2. Status Codes 2xx (Success): 200 OK, 201 Created. 3xx (Redirection): 301 Moved Permanently. 4xx (Client Error): 400 Bad Request, 404 Not Found. 5xx (Server Error): 500 Internal Server Error. </p>
+  </div>
+  <footer class="entry-footer"><span title='2024-05-29 00:00:00 +0700 +07'>May 29, 2024</span>&nbsp;·&nbsp;<span>1 phút</span></footer>
+  <a class="entry-link" aria-label="post link to Giao Thức HTTP: Methods và Status Codes" href="https://example.org/posts/http-protocol/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Lập Trình Socket Trong Java
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>1. Socket là gì? Là điểm cuối (endpoint) trong liên kết giao tiếp 2 chiều giữa 2 chương trình chạy trên mạng.
+2. Mô hình Client-Server Server: Lắng nghe yêu cầu tại một Port cụ thể. Client: Gửi yêu cầu kết nối đến IP và Port của Server. 3. Code Ví Dụ (Server) ServerSocket server = new ServerSocket(5000); Socket socket = server.accept(); // Chờ kết nối // Đọc/Ghi dữ liệu qua InputStream/OutputStream 4. Code Ví Dụ (Client) Socket socket = new Socket(&#34;localhost&#34;, 5000); // Gửi yêu cầu </p>
+  </div>
+  <footer class="entry-footer"><span title='2024-05-28 00:00:00 +0700 +07'>May 28, 2024</span>&nbsp;·&nbsp;<span>1 phút</span></footer>
+  <a class="entry-link" aria-label="post link to Lập Trình Socket Trong Java" href="https://example.org/posts/socket-programming/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Cơ Bản Về Mạng Máy Tính: Mô Hình OSI &amp; TCP/IP
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>1. Mô hình OSI (7 tầng) Physical: Truyền dẫn vật lý (cáp, sóng). Data Link: Đóng gói dữ liệu (Frame), MAC address. Network: Định tuyến (IP address). Transport: Truyền tải tin cậy/không tin cậy (TCP/UDP). Session: Quản lý phiên. Presentation: Định dạng dữ liệu. Application: Giao tiếp với người dùng (HTTP, FTP). 2. TCP/IP (4 tầng) Thực tế sử dụng mô hình này nhiều hơn:
+Application Transport Internet Network Access </p>
+  </div>
+  <footer class="entry-footer"><span title='2024-05-27 00:00:00 +0700 +07'>May 27, 2024</span>&nbsp;·&nbsp;<span>1 phút</span></footer>
+  <a class="entry-link" aria-label="post link to Cơ Bản Về Mạng Máy Tính: Mô Hình OSI & TCP/IP" href="https://example.org/posts/network-basics/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Bất Đồng Bộ: Promises và Async/Await
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>1. Tại sao cần Async? JS là đơn luồng (single-threaded). Các tác vụ lâu (I/O, API) cần chạy bất đồng bộ để không chặn giao diện.
+2. Promise Đại diện cho một giá trị trong tương lai.
+fetchData().then(data =&gt; console.log(data)); 3. Async/Await Cú pháp hiện đại giúp viết code async trông như sync.
+async function getData() { try { const res = await fetch(url); const data = await res.json(); } catch (err) { console.error(err); } } </p>
+  </div>
+  <footer class="entry-footer"><span title='2024-05-26 00:00:00 +0700 +07'>May 26, 2024</span>&nbsp;·&nbsp;<span>1 phút</span></footer>
+  <a class="entry-link" aria-label="post link to Bất Đồng Bộ: Promises và Async/Await" href="https://example.org/posts/js-async/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Thao Tác DOM với JavaScript
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>1. DOM là gì? DOM (Document Object Model) là biểu diễn dạng cây của trang HTML giúp JS có thể thay đổi cấu trúc, nội dung và kiểu dáng.
+2. Truy cập phần tử const el = document.getElementById(&#34;myId&#34;); const items = document.querySelectorAll(&#34;.item&#34;); 3. Thay đổi nội dung el.textContent = &#34;Nội dung mới&#34;; el.style.color = &#34;red&#34;; 4. Event Listener btn.addEventListener(&#34;click&#34;, () =&gt; { alert(&#34;Clicked!&#34;); }); </p>
+  </div>
+  <footer class="entry-footer"><span title='2024-05-25 00:00:00 +0700 +07'>May 25, 2024</span>&nbsp;·&nbsp;<span>1 phút</span></footer>
+  <a class="entry-link" aria-label="post link to Thao Tác DOM với JavaScript" href="https://example.org/posts/js-dom/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Các Tính Năng Mới Trong ES6 (ECMAScript 2015)
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>1. Let &amp; Const Thay thế var để quản lý scope tốt hơn. const dùng cho hằng số.
+2. Arrow Functions Cú pháp ngắn gọn hơn cho hàm.
+const add = (a, b) =&gt; a &#43; b; 3. Template Literals Chuỗi ký tự cho phép nội suy biến.
+let name = &#34;Thanh&#34;; console.log(`Hello, ${name}`); 4. Destructuring Trích xuất dữ liệu từ Array/Object dễ dàng.
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-05-24 00:00:00 +0700 +07'>May 24, 2024</span>&nbsp;·&nbsp;<span>1 phút</span></footer>
+  <a class="entry-link" aria-label="post link to Các Tính Năng Mới Trong ES6 (ECMAScript 2015)" href="https://example.org/posts/js-es6/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Đa Luồng (Multithreading) trong Java
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>1. Thread là gì? Thread (luồng) là đơn vị nhỏ nhất của việc thực thi trong một quy trình.
+2. Cách tạo Thread Có 2 cách chính:
+Kế thừa class Thread. Implement interface Runnable. // Cách 2 (Khuyên dùng) class MyToask implements Runnable { public void run() { System.out.println(&#34;Running...&#34;); } } Thread t1 = new Thread(new MyTask()); t1.start(); 3. Vòng đời Thread New -&gt; Runnable -&gt; Running -&gt; Blocked/Waiting -&gt; Terminated.
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-05-23 00:00:00 +0700 +07'>May 23, 2024</span>&nbsp;·&nbsp;<span>1 phút</span></footer>
+  <a class="entry-link" aria-label="post link to Đa Luồng (Multithreading) trong Java" href="https://example.org/posts/java-threads/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Làm chủ Java Collections Framework
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>1. Tổng quan Java Collections Framework cung cấp kiến trúc để lưu trữ và thao tác nhóm các đối tượng.
+2. Các Interface chính List: Lưu trữ danh sách có thứ tự, chấp nhận trùng lặp. (ArrayList, LinkedList) Set: Lưu trữ tập hợp không trùng lặp. (HashSet, TreeSet) Map: Lưu trữ cặp Key-Value. (HashMap, TreeMap) 3. ArrayList vs LinkedList ArrayList: Dùng mảng động. Truy xuất nhanh (get), thêm/xoá chậm. LinkedList: Dùng danh sách liên kết. Truy xuất chậm, thêm/xoá nhanh. List&lt;String&gt; list = new ArrayList&lt;&gt;(); list.add(&#34;Java&#34;); list.add(&#34;Network&#34;); </p>
+  </div>
+  <footer class="entry-footer"><span title='2024-05-22 00:00:00 +0700 +07'>May 22, 2024</span>&nbsp;·&nbsp;<span>1 phút</span></footer>
+  <a class="entry-link" aria-label="post link to Làm chủ Java Collections Framework" href="https://example.org/posts/java-collections/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Lập Trình Hướng Đối Tượng (OOP) trong Java
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>1. Giới thiệu Lập trình hướng đối tượng (OOP) là một mô hình lập trình dựa trên khái niệm “đối tượng”, chứa đựng dữ liệu và mã lệnh.
+2. 4 Tính chất cơ bản Tính đóng gói (Encapsulation): Che giấu dữ liệu, chỉ cho phép truy cập qua method public. Tính kế thừa (Inheritance): Class con kế thừa thuộc tính/phương thức từ class cha. Tính đa hình (Polymorphism): Một hành động có thể thực hiện theo nhiều cách khác nhau. Tính trừu tượng (Abstraction): Ẩn chi tiết cài đặt, chỉ hiển thị tính năng. 3. Ví dụ Code class Animal { void speak() { System.out.println(&#34;Animal speaks&#34;); } } class Dog extends Animal { @Override void speak() { System.out.println(&#34;Woof&#34;); } } </p>
+  </div>
+  <footer class="entry-footer"><span title='2024-05-21 00:00:00 +0700 +07'>May 21, 2024</span>&nbsp;·&nbsp;<span>1 phút</span></footer>
+  <a class="entry-link" aria-label="post link to Lập Trình Hướng Đối Tượng (OOP) trong Java" href="https://example.org/posts/java-oop/"></a>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="https://example.org/">Network Programming Blog</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

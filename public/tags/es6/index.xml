@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>ES6 on Network Programming Blog</title>
+    <link>https://example.org/tags/es6/</link>
+    <description>Recent content in ES6 on Network Programming Blog</description>
+    <generator>Hugo -- 0.153.2</generator>
+    <language>vi</language>
+    <lastBuildDate>Fri, 24 May 2024 00:00:00 +0700</lastBuildDate>
+    <atom:link href="https://example.org/tags/es6/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Các Tính Năng Mới Trong ES6 (ECMAScript 2015)</title>
+      <link>https://example.org/posts/js-es6/</link>
+      <pubDate>Fri, 24 May 2024 00:00:00 +0700</pubDate>
+      <guid>https://example.org/posts/js-es6/</guid>
+      <description>&lt;h2 id=&#34;1-let--const&#34;&gt;1. Let &amp;amp; Const&lt;/h2&gt;
+&lt;p&gt;Thay thế &lt;code&gt;var&lt;/code&gt; để quản lý scope tốt hơn. &lt;code&gt;const&lt;/code&gt; dùng cho hằng số.&lt;/p&gt;
+&lt;h2 id=&#34;2-arrow-functions&#34;&gt;2. Arrow Functions&lt;/h2&gt;
+&lt;p&gt;Cú pháp ngắn gọn hơn cho hàm.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;add&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;a&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;b&lt;/span&gt;) =&amp;gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;a&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;b&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;3-template-literals&#34;&gt;3. Template Literals&lt;/h2&gt;
+&lt;p&gt;Chuỗi ký tự cho phép nội suy biến.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Thanh&amp;#34;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;console&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;log&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;`Hello, &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;4-destructuring&#34;&gt;4. Destructuring&lt;/h2&gt;
+&lt;p&gt;Trích xuất dữ liệu từ Array/Object dễ dàng.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

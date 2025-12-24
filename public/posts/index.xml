@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Posts on Network Programming Blog</title>
+    <link>https://example.org/posts/</link>
+    <description>Recent content in Posts on Network Programming Blog</description>
+    <generator>Hugo -- 0.153.2</generator>
+    <language>vi</language>
+    <lastBuildDate>Wed, 29 May 2024 00:00:00 +0700</lastBuildDate>
+    <atom:link href="https://example.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Giao Thức HTTP: Methods và Status Codes</title>
+      <link>https://example.org/posts/http-protocol/</link>
+      <pubDate>Wed, 29 May 2024 00:00:00 +0700</pubDate>
+      <guid>https://example.org/posts/http-protocol/</guid>
+      <description>&lt;h2 id=&#34;1-http-methods&#34;&gt;1. HTTP Methods&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;GET&lt;/strong&gt;: Lấy dữ liệu.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;POST&lt;/strong&gt;: Gửi dữ liệu mới.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;PUT&lt;/strong&gt;: Cập nhật toàn bộ.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;PATCH&lt;/strong&gt;: Cập nhật một phần.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;DELETE&lt;/strong&gt;: Xoá dữ liệu.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;2-status-codes&#34;&gt;2. Status Codes&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;2xx (Success)&lt;/strong&gt;: 200 OK, 201 Created.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;3xx (Redirection)&lt;/strong&gt;: 301 Moved Permanently.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;4xx (Client Error)&lt;/strong&gt;: 400 Bad Request, 404 Not Found.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;5xx (Server Error)&lt;/strong&gt;: 500 Internal Server Error.&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Lập Trình Socket Trong Java</title>
+      <link>https://example.org/posts/socket-programming/</link>
+      <pubDate>Tue, 28 May 2024 00:00:00 +0700</pubDate>
+      <guid>https://example.org/posts/socket-programming/</guid>
+      <description>&lt;h2 id=&#34;1-socket-là-gì&#34;&gt;1. Socket là gì?&lt;/h2&gt;
+&lt;p&gt;Là điểm cuối (endpoint) trong liên kết giao tiếp 2 chiều giữa 2 chương trình chạy trên mạng.&lt;/p&gt;
+&lt;h2 id=&#34;2-mô-hình-client-server&#34;&gt;2. Mô hình Client-Server&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Server&lt;/strong&gt;: Lắng nghe yêu cầu tại một Port cụ thể.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Client&lt;/strong&gt;: Gửi yêu cầu kết nối đến IP và Port của Server.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;3-code-ví-dụ-server&#34;&gt;3. Code Ví Dụ (Server)&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ServerSocket server &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; ServerSocket(5000);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Socket socket &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; server.&lt;span style=&#34;color:#a6e22e&#34;&gt;accept&lt;/span&gt;(); &lt;span style=&#34;color:#75715e&#34;&gt;// Chờ kết nối&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// Đọc/Ghi dữ liệu qua InputStream/OutputStream&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;4-code-ví-dụ-client&#34;&gt;4. Code Ví Dụ (Client)&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Socket socket &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; Socket(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;localhost&amp;#34;&lt;/span&gt;, 5000);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// Gửi yêu cầu&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+    <item>
+      <title>Cơ Bản Về Mạng Máy Tính: Mô Hình OSI &amp; TCP/IP</title>
+      <link>https://example.org/posts/network-basics/</link>
+      <pubDate>Mon, 27 May 2024 00:00:00 +0700</pubDate>
+      <guid>https://example.org/posts/network-basics/</guid>
+      <description>&lt;h2 id=&#34;1-mô-hình-osi-7-tầng&#34;&gt;1. Mô hình OSI (7 tầng)&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Physical&lt;/strong&gt;: Truyền dẫn vật lý (cáp, sóng).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Data Link&lt;/strong&gt;: Đóng gói dữ liệu (Frame), MAC address.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Network&lt;/strong&gt;: Định tuyến (IP address).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Transport&lt;/strong&gt;: Truyền tải tin cậy/không tin cậy (TCP/UDP).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Session&lt;/strong&gt;: Quản lý phiên.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Presentation&lt;/strong&gt;: Định dạng dữ liệu.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Application&lt;/strong&gt;: Giao tiếp với người dùng (HTTP, FTP).&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;2-tcpip-4-tầng&#34;&gt;2. TCP/IP (4 tầng)&lt;/h2&gt;
+&lt;p&gt;Thực tế sử dụng mô hình này nhiều hơn:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Application&lt;/li&gt;
+&lt;li&gt;Transport&lt;/li&gt;
+&lt;li&gt;Internet&lt;/li&gt;
+&lt;li&gt;Network Access&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Bất Đồng Bộ: Promises và Async/Await</title>
+      <link>https://example.org/posts/js-async/</link>
+      <pubDate>Sun, 26 May 2024 00:00:00 +0700</pubDate>
+      <guid>https://example.org/posts/js-async/</guid>
+      <description>&lt;h2 id=&#34;1-tại-sao-cần-async&#34;&gt;1. Tại sao cần Async?&lt;/h2&gt;
+&lt;p&gt;JS là đơn luồng (single-threaded). Các tác vụ lâu (I/O, API) cần chạy bất đồng bộ để không chặn giao diện.&lt;/p&gt;
+&lt;h2 id=&#34;2-promise&#34;&gt;2. Promise&lt;/h2&gt;
+&lt;p&gt;Đại diện cho một giá trị trong tương lai.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;fetchData&lt;/span&gt;().&lt;span style=&#34;color:#a6e22e&#34;&gt;then&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;data&lt;/span&gt; =&amp;gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;console&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;log&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;data&lt;/span&gt;));
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;3-asyncawait&#34;&gt;3. Async/Await&lt;/h2&gt;
+&lt;p&gt;Cú pháp hiện đại giúp viết code async trông như sync.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;async&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;getData&lt;/span&gt;() {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;try&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;res&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;await&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;fetch&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;url&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;data&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;await&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;res&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;json&lt;/span&gt;();
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    } &lt;span style=&#34;color:#66d9ef&#34;&gt;catch&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;err&lt;/span&gt;) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#a6e22e&#34;&gt;console&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;error&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;err&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+    <item>
+      <title>Thao Tác DOM với JavaScript</title>
+      <link>https://example.org/posts/js-dom/</link>
+      <pubDate>Sat, 25 May 2024 00:00:00 +0700</pubDate>
+      <guid>https://example.org/posts/js-dom/</guid>
+      <description>&lt;h2 id=&#34;1-dom-là-gì&#34;&gt;1. DOM là gì?&lt;/h2&gt;
+&lt;p&gt;DOM (Document Object Model) là biểu diễn dạng cây của trang HTML giúp JS có thể thay đổi cấu trúc, nội dung và kiểu dáng.&lt;/p&gt;
+&lt;h2 id=&#34;2-truy-cập-phần-tử&#34;&gt;2. Truy cập phần tử&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;el&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; document.&lt;span style=&#34;color:#a6e22e&#34;&gt;getElementById&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;myId&amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;items&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; document.&lt;span style=&#34;color:#a6e22e&#34;&gt;querySelectorAll&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;.item&amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;3-thay-đổi-nội-dung&#34;&gt;3. Thay đổi nội dung&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;el&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;textContent&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Nội dung mới&amp;#34;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;el&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;style&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;color&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;red&amp;#34;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;4-event-listener&#34;&gt;4. Event Listener&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;btn&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;addEventListener&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;click&amp;#34;&lt;/span&gt;, () =&amp;gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;alert&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Clicked!&amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;});
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+    <item>
+      <title>Các Tính Năng Mới Trong ES6 (ECMAScript 2015)</title>
+      <link>https://example.org/posts/js-es6/</link>
+      <pubDate>Fri, 24 May 2024 00:00:00 +0700</pubDate>
+      <guid>https://example.org/posts/js-es6/</guid>
+      <description>&lt;h2 id=&#34;1-let--const&#34;&gt;1. Let &amp;amp; Const&lt;/h2&gt;
+&lt;p&gt;Thay thế &lt;code&gt;var&lt;/code&gt; để quản lý scope tốt hơn. &lt;code&gt;const&lt;/code&gt; dùng cho hằng số.&lt;/p&gt;
+&lt;h2 id=&#34;2-arrow-functions&#34;&gt;2. Arrow Functions&lt;/h2&gt;
+&lt;p&gt;Cú pháp ngắn gọn hơn cho hàm.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;add&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;a&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;b&lt;/span&gt;) =&amp;gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;a&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;b&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;3-template-literals&#34;&gt;3. Template Literals&lt;/h2&gt;
+&lt;p&gt;Chuỗi ký tự cho phép nội suy biến.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Thanh&amp;#34;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;console&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;log&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;`Hello, &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;4-destructuring&#34;&gt;4. Destructuring&lt;/h2&gt;
+&lt;p&gt;Trích xuất dữ liệu từ Array/Object dễ dàng.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Đa Luồng (Multithreading) trong Java</title>
+      <link>https://example.org/posts/java-threads/</link>
+      <pubDate>Thu, 23 May 2024 00:00:00 +0700</pubDate>
+      <guid>https://example.org/posts/java-threads/</guid>
+      <description>&lt;h2 id=&#34;1-thread-là-gì&#34;&gt;1. Thread là gì?&lt;/h2&gt;
+&lt;p&gt;Thread (luồng) là đơn vị nhỏ nhất của việc thực thi trong một quy trình.&lt;/p&gt;
+&lt;h2 id=&#34;2-cách-tạo-thread&#34;&gt;2. Cách tạo Thread&lt;/h2&gt;
+&lt;p&gt;Có 2 cách chính:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Kế thừa class &lt;code&gt;Thread&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Implement interface &lt;code&gt;Runnable&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// Cách 2 (Khuyên dùng)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;MyToask&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;implements&lt;/span&gt; Runnable {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;void&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;run&lt;/span&gt;() {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        System.&lt;span style=&#34;color:#a6e22e&#34;&gt;out&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;println&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Running...&amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Thread t1 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; Thread(&lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; MyTask());
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;t1.&lt;span style=&#34;color:#a6e22e&#34;&gt;start&lt;/span&gt;();
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;3-vòng-đời-thread&#34;&gt;3. Vòng đời Thread&lt;/h2&gt;
+&lt;p&gt;New -&amp;gt; Runnable -&amp;gt; Running -&amp;gt; Blocked/Waiting -&amp;gt; Terminated.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Làm chủ Java Collections Framework</title>
+      <link>https://example.org/posts/java-collections/</link>
+      <pubDate>Wed, 22 May 2024 00:00:00 +0700</pubDate>
+      <guid>https://example.org/posts/java-collections/</guid>
+      <description>&lt;h2 id=&#34;1-tổng-quan&#34;&gt;1. Tổng quan&lt;/h2&gt;
+&lt;p&gt;Java Collections Framework cung cấp kiến trúc để lưu trữ và thao tác nhóm các đối tượng.&lt;/p&gt;
+&lt;h2 id=&#34;2-các-interface-chính&#34;&gt;2. Các Interface chính&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;List&lt;/strong&gt;: Lưu trữ danh sách có thứ tự, chấp nhận trùng lặp. (ArrayList, LinkedList)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Set&lt;/strong&gt;: Lưu trữ tập hợp không trùng lặp. (HashSet, TreeSet)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Map&lt;/strong&gt;: Lưu trữ cặp Key-Value. (HashMap, TreeMap)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;3-arraylist-vs-linkedlist&#34;&gt;3. ArrayList vs LinkedList&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;ArrayList&lt;/strong&gt;: Dùng mảng động. Truy xuất nhanh (get), thêm/xoá chậm.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;LinkedList&lt;/strong&gt;: Dùng danh sách liên kết. Truy xuất chậm, thêm/xoá nhanh.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;List&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;String&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; list &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; ArrayList&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&amp;gt;&lt;/span&gt;();
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;list.&lt;span style=&#34;color:#a6e22e&#34;&gt;add&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Java&amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;list.&lt;span style=&#34;color:#a6e22e&#34;&gt;add&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Network&amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+    <item>
+      <title>Lập Trình Hướng Đối Tượng (OOP) trong Java</title>
+      <link>https://example.org/posts/java-oop/</link>
+      <pubDate>Tue, 21 May 2024 00:00:00 +0700</pubDate>
+      <guid>https://example.org/posts/java-oop/</guid>
+      <description>&lt;h2 id=&#34;1-giới-thiệu&#34;&gt;1. Giới thiệu&lt;/h2&gt;
+&lt;p&gt;Lập trình hướng đối tượng (OOP) là một mô hình lập trình dựa trên khái niệm &amp;ldquo;đối tượng&amp;rdquo;, chứa đựng dữ liệu và mã lệnh.&lt;/p&gt;
+&lt;h2 id=&#34;2-4-tính-chất-cơ-bản&#34;&gt;2. 4 Tính chất cơ bản&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Tính đóng gói (Encapsulation)&lt;/strong&gt;: Che giấu dữ liệu, chỉ cho phép truy cập qua method public.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Tính kế thừa (Inheritance)&lt;/strong&gt;: Class con kế thừa thuộc tính/phương thức từ class cha.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Tính đa hình (Polymorphism)&lt;/strong&gt;: Một hành động có thể thực hiện theo nhiều cách khác nhau.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Tính trừu tượng (Abstraction)&lt;/strong&gt;: Ẩn chi tiết cài đặt, chỉ hiển thị tính năng.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;3-ví-dụ-code&#34;&gt;3. Ví dụ Code&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Animal&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;void&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;speak&lt;/span&gt;() {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        System.&lt;span style=&#34;color:#a6e22e&#34;&gt;out&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;println&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Animal speaks&amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Dog&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;extends&lt;/span&gt; Animal {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;@Override&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;void&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;speak&lt;/span&gt;() {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        System.&lt;span style=&#34;color:#a6e22e&#34;&gt;out&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;println&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Woof&amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+  </channel>
+</rss>
