@@ -23,9 +23,12 @@ theme = 'PaperMod'
       { name = "About", url = "/about" },
     ]
 
-  [params.socialIcons]
-    Github = "https://github.com/leeT-42"
-    Email = "mailto:leminhthanh931@gmail.com"
+  [[params.socialIcons]]
+    name = "Github"
+    url = "https://github.com/leeT-42"
+  [[params.socialIcons]]
+    name = "Email"
+    url = "mailto:leminhthanh931@gmail.com"
     # Facebook = "https://facebook.com/username" 
     # LinkedIn = "https://linkedin.com/in/username"
 
