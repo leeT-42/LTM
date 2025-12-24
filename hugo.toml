@@ -1,4 +1,4 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://leeT-42.github.io/LTM/'
 languageCode = 'vi'
 title = 'Network Programming Blog'
 theme = 'PaperMod'
