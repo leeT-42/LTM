@@ -18,9 +18,9 @@ theme = 'PaperMod'
     imageUrl = "https://github.com/leeT-42.png" 
     imageTitle = "Avatar"
     buttons = [
-      { name = "Projects", url = "/projects" },
-      { name = "Blog", url = "/posts" },
-      { name = "About", url = "/about" },
+      { name = "Projects", url = "/LTM/projects" },
+      { name = "Blog", url = "/LTM/posts" },
+      { name = "About", url = "/LTM/about" },
     ]
 
   [[params.socialIcons]]
@@ -36,20 +36,20 @@ theme = 'PaperMod'
   [[menu.main]]
     identifier = "home"
     name = "Home"
-    url = "/"
+    url = "/LTM/"
     weight = 10
   [[menu.main]]
     identifier = "projects"
     name = "Projects"
-    url = "/projects"
+    url = "/LTM/projects"
     weight = 15
   [[menu.main]]
     identifier = "blog"
     name = "Blog"
-    url = "/posts"
+    url = "/LTM/posts"
     weight = 20
   [[menu.main]]
     identifier = "about"
     name = "About"
-    url = "/about"
+    url = "/LTM/about"
     weight = 30
