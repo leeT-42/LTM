@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Posts on Network Programming Blog</title>
-    <link>https://example.org/posts/</link>
+    <link>http://localhost:1313/LTM/posts/</link>
     <description>Recent content in Posts on Network Programming Blog</description>
     <generator>Hugo -- 0.153.2</generator>
     <language>vi</language>
     <lastBuildDate>Wed, 29 May 2024 00:00:00 +0700</lastBuildDate>
-    <atom:link href="https://example.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/LTM/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Giao Thức HTTP: Methods và Status Codes</title>
-      <link>https://example.org/posts/http-protocol/</link>
+      <link>http://localhost:1313/LTM/posts/http-protocol/</link>
       <pubDate>Wed, 29 May 2024 00:00:00 +0700</pubDate>
-      <guid>https://example.org/posts/http-protocol/</guid>
+      <guid>http://localhost:1313/LTM/posts/http-protocol/</guid>
       <description>&lt;h2 id=&#34;1-http-methods&#34;&gt;1. HTTP Methods&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;GET&lt;/strong&gt;: Lấy dữ liệu.&lt;/li&gt;
@@ -31,9 +31,9 @@
     </item>
     <item>
       <title>Lập Trình Socket Trong Java</title>
-      <link>https://example.org/posts/socket-programming/</link>
+      <link>http://localhost:1313/LTM/posts/socket-programming/</link>
       <pubDate>Tue, 28 May 2024 00:00:00 +0700</pubDate>
-      <guid>https://example.org/posts/socket-programming/</guid>
+      <guid>http://localhost:1313/LTM/posts/socket-programming/</guid>
       <description>&lt;h2 id=&#34;1-socket-là-gì&#34;&gt;1. Socket là gì?&lt;/h2&gt;
 &lt;p&gt;Là điểm cuối (endpoint) trong liên kết giao tiếp 2 chiều giữa 2 chương trình chạy trên mạng.&lt;/p&gt;
 &lt;h2 id=&#34;2-mô-hình-client-server&#34;&gt;2. Mô hình Client-Server&lt;/h2&gt;
@@ -52,9 +52,9 @@
     </item>
     <item>
       <title>Cơ Bản Về Mạng Máy Tính: Mô Hình OSI &amp; TCP/IP</title>
-      <link>https://example.org/posts/network-basics/</link>
+      <link>http://localhost:1313/LTM/posts/network-basics/</link>
       <pubDate>Mon, 27 May 2024 00:00:00 +0700</pubDate>
-      <guid>https://example.org/posts/network-basics/</guid>
+      <guid>http://localhost:1313/LTM/posts/network-basics/</guid>
       <description>&lt;h2 id=&#34;1-mô-hình-osi-7-tầng&#34;&gt;1. Mô hình OSI (7 tầng)&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;strong&gt;Physical&lt;/strong&gt;: Truyền dẫn vật lý (cáp, sóng).&lt;/li&gt;
@@ -76,9 +76,9 @@
     </item>
     <item>
       <title>Bất Đồng Bộ: Promises và Async/Await</title>
-      <link>https://example.org/posts/js-async/</link>
+      <link>http://localhost:1313/LTM/posts/js-async/</link>
       <pubDate>Sun, 26 May 2024 00:00:00 +0700</pubDate>
-      <guid>https://example.org/posts/js-async/</guid>
+      <guid>http://localhost:1313/LTM/posts/js-async/</guid>
       <description>&lt;h2 id=&#34;1-tại-sao-cần-async&#34;&gt;1. Tại sao cần Async?&lt;/h2&gt;
 &lt;p&gt;JS là đơn luồng (single-threaded). Các tác vụ lâu (I/O, API) cần chạy bất đồng bộ để không chặn giao diện.&lt;/p&gt;
 &lt;h2 id=&#34;2-promise&#34;&gt;2. Promise&lt;/h2&gt;
@@ -98,9 +98,9 @@
     </item>
     <item>
       <title>Thao Tác DOM với JavaScript</title>
-      <link>https://example.org/posts/js-dom/</link>
+      <link>http://localhost:1313/LTM/posts/js-dom/</link>
       <pubDate>Sat, 25 May 2024 00:00:00 +0700</pubDate>
-      <guid>https://example.org/posts/js-dom/</guid>
+      <guid>http://localhost:1313/LTM/posts/js-dom/</guid>
       <description>&lt;h2 id=&#34;1-dom-là-gì&#34;&gt;1. DOM là gì?&lt;/h2&gt;
 &lt;p&gt;DOM (Document Object Model) là biểu diễn dạng cây của trang HTML giúp JS có thể thay đổi cấu trúc, nội dung và kiểu dáng.&lt;/p&gt;
 &lt;h2 id=&#34;2-truy-cập-phần-tử&#34;&gt;2. Truy cập phần tử&lt;/h2&gt;
@@ -117,9 +117,9 @@
     </item>
     <item>
       <title>Các Tính Năng Mới Trong ES6 (ECMAScript 2015)</title>
-      <link>https://example.org/posts/js-es6/</link>
+      <link>http://localhost:1313/LTM/posts/js-es6/</link>
       <pubDate>Fri, 24 May 2024 00:00:00 +0700</pubDate>
-      <guid>https://example.org/posts/js-es6/</guid>
+      <guid>http://localhost:1313/LTM/posts/js-es6/</guid>
       <description>&lt;h2 id=&#34;1-let--const&#34;&gt;1. Let &amp;amp; Const&lt;/h2&gt;
 &lt;p&gt;Thay thế &lt;code&gt;var&lt;/code&gt; để quản lý scope tốt hơn. &lt;code&gt;const&lt;/code&gt; dùng cho hằng số.&lt;/p&gt;
 &lt;h2 id=&#34;2-arrow-functions&#34;&gt;2. Arrow Functions&lt;/h2&gt;
@@ -134,9 +134,9 @@
     </item>
     <item>
       <title>Đa Luồng (Multithreading) trong Java</title>
-      <link>https://example.org/posts/java-threads/</link>
+      <link>http://localhost:1313/LTM/posts/java-threads/</link>
       <pubDate>Thu, 23 May 2024 00:00:00 +0700</pubDate>
-      <guid>https://example.org/posts/java-threads/</guid>
+      <guid>http://localhost:1313/LTM/posts/java-threads/</guid>
       <description>&lt;h2 id=&#34;1-thread-là-gì&#34;&gt;1. Thread là gì?&lt;/h2&gt;
 &lt;p&gt;Thread (luồng) là đơn vị nhỏ nhất của việc thực thi trong một quy trình.&lt;/p&gt;
 &lt;h2 id=&#34;2-cách-tạo-thread&#34;&gt;2. Cách tạo Thread&lt;/h2&gt;
@@ -158,9 +158,9 @@
     </item>
     <item>
       <title>Làm chủ Java Collections Framework</title>
-      <link>https://example.org/posts/java-collections/</link>
+      <link>http://localhost:1313/LTM/posts/java-collections/</link>
       <pubDate>Wed, 22 May 2024 00:00:00 +0700</pubDate>
-      <guid>https://example.org/posts/java-collections/</guid>
+      <guid>http://localhost:1313/LTM/posts/java-collections/</guid>
       <description>&lt;h2 id=&#34;1-tổng-quan&#34;&gt;1. Tổng quan&lt;/h2&gt;
 &lt;p&gt;Java Collections Framework cung cấp kiến trúc để lưu trữ và thao tác nhóm các đối tượng.&lt;/p&gt;
 &lt;h2 id=&#34;2-các-interface-chính&#34;&gt;2. Các Interface chính&lt;/h2&gt;
@@ -181,9 +181,9 @@
     </item>
     <item>
       <title>Lập Trình Hướng Đối Tượng (OOP) trong Java</title>
-      <link>https://example.org/posts/java-oop/</link>
+      <link>http://localhost:1313/LTM/posts/java-oop/</link>
       <pubDate>Tue, 21 May 2024 00:00:00 +0700</pubDate>
-      <guid>https://example.org/posts/java-oop/</guid>
+      <guid>http://localhost:1313/LTM/posts/java-oop/</guid>
       <description>&lt;h2 id=&#34;1-giới-thiệu&#34;&gt;1. Giới thiệu&lt;/h2&gt;
 &lt;p&gt;Lập trình hướng đối tượng (OOP) là một mô hình lập trình dựa trên khái niệm &amp;ldquo;đối tượng&amp;rdquo;, chứa đựng dữ liệu và mã lệnh.&lt;/p&gt;
 &lt;h2 id=&#34;2-4-tính-chất-cơ-bản&#34;&gt;2. 4 Tính chất cơ bản&lt;/h2&gt;

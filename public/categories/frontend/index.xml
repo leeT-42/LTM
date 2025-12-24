@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Frontend on Network Programming Blog</title>
-    <link>https://example.org/categories/frontend/</link>
+    <link>http://localhost:1313/LTM/categories/frontend/</link>
     <description>Recent content in Frontend on Network Programming Blog</description>
     <generator>Hugo -- 0.153.2</generator>
     <language>vi</language>
     <lastBuildDate>Sun, 26 May 2024 00:00:00 +0700</lastBuildDate>
-    <atom:link href="https://example.org/categories/frontend/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/LTM/categories/frontend/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Bất Đồng Bộ: Promises và Async/Await</title>
-      <link>https://example.org/posts/js-async/</link>
+      <link>http://localhost:1313/LTM/posts/js-async/</link>
       <pubDate>Sun, 26 May 2024 00:00:00 +0700</pubDate>
-      <guid>https://example.org/posts/js-async/</guid>
+      <guid>http://localhost:1313/LTM/posts/js-async/</guid>
       <description>&lt;h2 id=&#34;1-tại-sao-cần-async&#34;&gt;1. Tại sao cần Async?&lt;/h2&gt;
 &lt;p&gt;JS là đơn luồng (single-threaded). Các tác vụ lâu (I/O, API) cần chạy bất đồng bộ để không chặn giao diện.&lt;/p&gt;
 &lt;h2 id=&#34;2-promise&#34;&gt;2. Promise&lt;/h2&gt;
@@ -32,9 +32,9 @@
     </item>
     <item>
       <title>Thao Tác DOM với JavaScript</title>
-      <link>https://example.org/posts/js-dom/</link>
+      <link>http://localhost:1313/LTM/posts/js-dom/</link>
       <pubDate>Sat, 25 May 2024 00:00:00 +0700</pubDate>
-      <guid>https://example.org/posts/js-dom/</guid>
+      <guid>http://localhost:1313/LTM/posts/js-dom/</guid>
       <description>&lt;h2 id=&#34;1-dom-là-gì&#34;&gt;1. DOM là gì?&lt;/h2&gt;
 &lt;p&gt;DOM (Document Object Model) là biểu diễn dạng cây của trang HTML giúp JS có thể thay đổi cấu trúc, nội dung và kiểu dáng.&lt;/p&gt;
 &lt;h2 id=&#34;2-truy-cập-phần-tử&#34;&gt;2. Truy cập phần tử&lt;/h2&gt;
@@ -51,9 +51,9 @@
     </item>
     <item>
       <title>Các Tính Năng Mới Trong ES6 (ECMAScript 2015)</title>
-      <link>https://example.org/posts/js-es6/</link>
+      <link>http://localhost:1313/LTM/posts/js-es6/</link>
       <pubDate>Fri, 24 May 2024 00:00:00 +0700</pubDate>
-      <guid>https://example.org/posts/js-es6/</guid>
+      <guid>http://localhost:1313/LTM/posts/js-es6/</guid>
       <description>&lt;h2 id=&#34;1-let--const&#34;&gt;1. Let &amp;amp; Const&lt;/h2&gt;
 &lt;p&gt;Thay thế &lt;code&gt;var&lt;/code&gt; để quản lý scope tốt hơn. &lt;code&gt;const&lt;/code&gt; dùng cho hằng số.&lt;/p&gt;
 &lt;h2 id=&#34;2-arrow-functions&#34;&gt;2. Arrow Functions&lt;/h2&gt;

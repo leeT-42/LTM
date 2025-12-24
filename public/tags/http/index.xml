@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>HTTP on Network Programming Blog</title>
-    <link>https://example.org/tags/http/</link>
+    <link>http://localhost:1313/LTM/tags/http/</link>
     <description>Recent content in HTTP on Network Programming Blog</description>
     <generator>Hugo -- 0.153.2</generator>
     <language>vi</language>
     <lastBuildDate>Wed, 29 May 2024 00:00:00 +0700</lastBuildDate>
-    <atom:link href="https://example.org/tags/http/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/LTM/tags/http/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Giao Thức HTTP: Methods và Status Codes</title>
-      <link>https://example.org/posts/http-protocol/</link>
+      <link>http://localhost:1313/LTM/posts/http-protocol/</link>
       <pubDate>Wed, 29 May 2024 00:00:00 +0700</pubDate>
-      <guid>https://example.org/posts/http-protocol/</guid>
+      <guid>http://localhost:1313/LTM/posts/http-protocol/</guid>
       <description>&lt;h2 id=&#34;1-http-methods&#34;&gt;1. HTTP Methods&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;GET&lt;/strong&gt;: Lấy dữ liệu.&lt;/li&gt;

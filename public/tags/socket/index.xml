@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Socket on Network Programming Blog</title>
-    <link>https://example.org/tags/socket/</link>
+    <link>http://localhost:1313/LTM/tags/socket/</link>
     <description>Recent content in Socket on Network Programming Blog</description>
     <generator>Hugo -- 0.153.2</generator>
     <language>vi</language>
     <lastBuildDate>Tue, 28 May 2024 00:00:00 +0700</lastBuildDate>
-    <atom:link href="https://example.org/tags/socket/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/LTM/tags/socket/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Lập Trình Socket Trong Java</title>
-      <link>https://example.org/posts/socket-programming/</link>
+      <link>http://localhost:1313/LTM/posts/socket-programming/</link>
       <pubDate>Tue, 28 May 2024 00:00:00 +0700</pubDate>
-      <guid>https://example.org/posts/socket-programming/</guid>
+      <guid>http://localhost:1313/LTM/posts/socket-programming/</guid>
       <description>&lt;h2 id=&#34;1-socket-là-gì&#34;&gt;1. Socket là gì?&lt;/h2&gt;
 &lt;p&gt;Là điểm cuối (endpoint) trong liên kết giao tiếp 2 chiều giữa 2 chương trình chạy trên mạng.&lt;/p&gt;
 &lt;h2 id=&#34;2-mô-hình-client-server&#34;&gt;2. Mô hình Client-Server&lt;/h2&gt;

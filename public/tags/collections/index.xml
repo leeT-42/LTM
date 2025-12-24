@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Collections on Network Programming Blog</title>
-    <link>https://example.org/tags/collections/</link>
+    <link>http://localhost:1313/LTM/tags/collections/</link>
     <description>Recent content in Collections on Network Programming Blog</description>
     <generator>Hugo -- 0.153.2</generator>
     <language>vi</language>
     <lastBuildDate>Wed, 22 May 2024 00:00:00 +0700</lastBuildDate>
-    <atom:link href="https://example.org/tags/collections/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/LTM/tags/collections/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Làm chủ Java Collections Framework</title>
-      <link>https://example.org/posts/java-collections/</link>
+      <link>http://localhost:1313/LTM/posts/java-collections/</link>
       <pubDate>Wed, 22 May 2024 00:00:00 +0700</pubDate>
-      <guid>https://example.org/posts/java-collections/</guid>
+      <guid>http://localhost:1313/LTM/posts/java-collections/</guid>
       <description>&lt;h2 id=&#34;1-tổng-quan&#34;&gt;1. Tổng quan&lt;/h2&gt;
 &lt;p&gt;Java Collections Framework cung cấp kiến trúc để lưu trữ và thao tác nhóm các đối tượng.&lt;/p&gt;
 &lt;h2 id=&#34;2-các-interface-chính&#34;&gt;2. Các Interface chính&lt;/h2&gt;

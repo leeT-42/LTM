@@ -2,94 +2,94 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on Network Programming Blog</title>
-    <link>https://example.org/tags/</link>
+    <link>http://localhost:1313/LTM/tags/</link>
     <description>Recent content in Tags on Network Programming Blog</description>
     <generator>Hugo -- 0.153.2</generator>
     <language>vi</language>
     <lastBuildDate>Wed, 29 May 2024 00:00:00 +0700</lastBuildDate>
-    <atom:link href="https://example.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/LTM/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>HTTP</title>
-      <link>https://example.org/tags/http/</link>
+      <link>http://localhost:1313/LTM/tags/http/</link>
       <pubDate>Wed, 29 May 2024 00:00:00 +0700</pubDate>
-      <guid>https://example.org/tags/http/</guid>
+      <guid>http://localhost:1313/LTM/tags/http/</guid>
       <description></description>
     </item>
     <item>
       <title>Network</title>
-      <link>https://example.org/tags/network/</link>
+      <link>http://localhost:1313/LTM/tags/network/</link>
       <pubDate>Wed, 29 May 2024 00:00:00 +0700</pubDate>
-      <guid>https://example.org/tags/network/</guid>
+      <guid>http://localhost:1313/LTM/tags/network/</guid>
       <description></description>
     </item>
     <item>
       <title>Java</title>
-      <link>https://example.org/tags/java/</link>
+      <link>http://localhost:1313/LTM/tags/java/</link>
       <pubDate>Tue, 28 May 2024 00:00:00 +0700</pubDate>
-      <guid>https://example.org/tags/java/</guid>
+      <guid>http://localhost:1313/LTM/tags/java/</guid>
       <description></description>
     </item>
     <item>
       <title>Socket</title>
-      <link>https://example.org/tags/socket/</link>
+      <link>http://localhost:1313/LTM/tags/socket/</link>
       <pubDate>Tue, 28 May 2024 00:00:00 +0700</pubDate>
-      <guid>https://example.org/tags/socket/</guid>
+      <guid>http://localhost:1313/LTM/tags/socket/</guid>
       <description></description>
     </item>
     <item>
       <title>OSI</title>
-      <link>https://example.org/tags/osi/</link>
+      <link>http://localhost:1313/LTM/tags/osi/</link>
       <pubDate>Mon, 27 May 2024 00:00:00 +0700</pubDate>
-      <guid>https://example.org/tags/osi/</guid>
+      <guid>http://localhost:1313/LTM/tags/osi/</guid>
       <description></description>
     </item>
     <item>
       <title>Async</title>
-      <link>https://example.org/tags/async/</link>
+      <link>http://localhost:1313/LTM/tags/async/</link>
       <pubDate>Sun, 26 May 2024 00:00:00 +0700</pubDate>
-      <guid>https://example.org/tags/async/</guid>
+      <guid>http://localhost:1313/LTM/tags/async/</guid>
       <description></description>
     </item>
     <item>
       <title>JavaScript</title>
-      <link>https://example.org/tags/javascript/</link>
+      <link>http://localhost:1313/LTM/tags/javascript/</link>
       <pubDate>Sun, 26 May 2024 00:00:00 +0700</pubDate>
-      <guid>https://example.org/tags/javascript/</guid>
+      <guid>http://localhost:1313/LTM/tags/javascript/</guid>
       <description></description>
     </item>
     <item>
       <title>DOM</title>
-      <link>https://example.org/tags/dom/</link>
+      <link>http://localhost:1313/LTM/tags/dom/</link>
       <pubDate>Sat, 25 May 2024 00:00:00 +0700</pubDate>
-      <guid>https://example.org/tags/dom/</guid>
+      <guid>http://localhost:1313/LTM/tags/dom/</guid>
       <description></description>
     </item>
     <item>
       <title>ES6</title>
-      <link>https://example.org/tags/es6/</link>
+      <link>http://localhost:1313/LTM/tags/es6/</link>
       <pubDate>Fri, 24 May 2024 00:00:00 +0700</pubDate>
-      <guid>https://example.org/tags/es6/</guid>
+      <guid>http://localhost:1313/LTM/tags/es6/</guid>
       <description></description>
     </item>
     <item>
       <title>Concurrency</title>
-      <link>https://example.org/tags/concurrency/</link>
+      <link>http://localhost:1313/LTM/tags/concurrency/</link>
       <pubDate>Thu, 23 May 2024 00:00:00 +0700</pubDate>
-      <guid>https://example.org/tags/concurrency/</guid>
+      <guid>http://localhost:1313/LTM/tags/concurrency/</guid>
       <description></description>
     </item>
     <item>
       <title>Collections</title>
-      <link>https://example.org/tags/collections/</link>
+      <link>http://localhost:1313/LTM/tags/collections/</link>
       <pubDate>Wed, 22 May 2024 00:00:00 +0700</pubDate>
-      <guid>https://example.org/tags/collections/</guid>
+      <guid>http://localhost:1313/LTM/tags/collections/</guid>
       <description></description>
     </item>
     <item>
       <title>OOP</title>
-      <link>https://example.org/tags/oop/</link>
+      <link>http://localhost:1313/LTM/tags/oop/</link>
       <pubDate>Tue, 21 May 2024 00:00:00 +0700</pubDate>
-      <guid>https://example.org/tags/oop/</guid>
+      <guid>http://localhost:1313/LTM/tags/oop/</guid>
       <description></description>
     </item>
   </channel>
