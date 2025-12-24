@@ -1,6 +1,6 @@
 baseURL = 'https://leeT-42.github.io/LTM/'
 languageCode = 'vi'
-title = 'Network Programming Blog'
+title = 'Lê Minh Thành'
 theme = 'PaperMod'
 
 [params]
@@ -13,15 +13,21 @@ theme = 'PaperMod'
   
   [params.profileMode]
     enabled = true
-    title = "My Network Blog"
-    subtitle = "Chia sẻ kiến thức Java & JavaScript"
-    imageUrl = ""
+    title = "Lê Minh Thành"
+    subtitle = "Developer | Network Enthusiast | Java Learner"
+    imageUrl = "https://github.com/leeT-42.png" 
     imageTitle = "Avatar"
     buttons = [
+      { name = "Projects", url = "/projects" },
       { name = "Blog", url = "/posts" },
       { name = "About", url = "/about" },
-      { name = "Github", url = "https://github.com/" }
     ]
+
+  [params.socialIcons]
+    Github = "https://github.com/leeT-42"
+    Email = "mailto:leminhthanh931@gmail.com"
+    # Facebook = "https://facebook.com/username" 
+    # LinkedIn = "https://linkedin.com/in/username"
 
 [menu]
   [[menu.main]]
@@ -29,6 +35,11 @@ theme = 'PaperMod'
     name = "Home"
     url = "/"
     weight = 10
+  [[menu.main]]
+    identifier = "projects"
+    name = "Projects"
+    url = "/projects"
+    weight = 15
   [[menu.main]]
     identifier = "blog"
     name = "Blog"

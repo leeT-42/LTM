@@ -1,24 +1,26 @@
 ---
-title: "Về Tác Giả"
-date: 2024-05-20T00:00:00+07:00
-draft: false
+title: "Về Tôi"
+hidemeta: true
+layout: "about"
 ---
 
-## Xin chào, mình là [Tên Của Bạn]
+# Xin chào! 👋
 
-Chào mừng các bạn đến với blog cá nhân của mình. Đây là nơi mình chia sẻ những kiến thức đã học được trong quá trình nghiên cứu về **Lập trình mạng**, **Java** và **JavaScript**.
+Tôi là **Lê Minh Thành**, một lập trình viên đam mê công nghệ và mạng máy tính. Trang blog này là nơi tôi lưu trữ những kiến thức, dự án và kinh nghiệm của mình trong quá trình học tập và làm việc.
 
-### Mục Tiêu Blog
-Blog này được xây dựng như một phần của môn học Lập trình mạng, với mục tiêu:
-1.  Hệ thống hoá kiến thức lập trình nền tảng.
-2.  Chia sẻ kinh nghiệm học tập.
-3.  Thực hành triển khai web static với Hugo.
+## 🛠 Kỹ Năng
 
-### Kỹ Năng
-*   **Java**: Core, OOP, Networking.
-*   **JavaScript**: ES6+, DOM.
-*   **Web**: HTML, CSS, Hugo SSG.
+### Ngôn Ngữ & Công Nghệ
+*   **Java**: Spring Boot, OOP, Socket Programming.
+*   **Web**: HTML5, CSS3, JavaScript (ES6+).
+*   **Database**: SQL, MySQL.
+*   **Tools**: Git/Github, Hugo, Docker.
 
-### Liên Hệ
-*   Email: email@example.com
-*   Github: https://github.com/
+## 📚 Học Vấn
+*   **Đại học**: [Tên Trường Của Bạn]
+*   **Chuyên ngành**: Công nghệ thông tin / Mạng máy tính.
+
+## 📫 Liên Hệ
+Nếu bạn có câu hỏi hoặc muốn hợp tác, đừng ngần ngại liên hệ với tôi:
+*   **Email**: [leminhthanh931@gmail.com](mailto:leminhthanh931@gmail.com)
+*   **Github**: [github.com/leeT-42](https://github.com/leeT-42)
