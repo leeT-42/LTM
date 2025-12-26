@@ -31,22 +31,6 @@ body.dark .logo a,
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-decoration: none;
-    display: flex;
-    align-items: center;
-}
-
-.logo img {
-    border-radius: 50% !important;
-    width: 38px !important;
-    height: 38px !important;
-    object-fit: cover !important;
-    background: transparent !important;
-    margin-right: 12px;
-    /* Blend mode effectively "hides" the white background */
-    mix-blend-mode: multiply;
-    /* Zoom in slightly to ensure any edge white from the AI image is cropped */
-    transform: scale(1.6);
-    display: inline-block;
 }
 
 /* Dark Mode Logo Styling */
@@ -57,12 +41,6 @@ body.dark .logo a,
     background-clip: text !important;
     -webkit-background-clip: text !important;
     -webkit-text-fill-color: transparent !important;
-}
-
-.dark .logo img {
-    filter: invert(1) hue-rotate(180deg);
-    mix-blend-mode: screen;
-    /* Removes black background in dark mode */
 }
 
 
