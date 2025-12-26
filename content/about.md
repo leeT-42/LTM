@@ -1,5 +1,5 @@
 ---
-
+title: "ABOUT ME"
 summary: "about"
 comments: true
 share: true
@@ -7,11 +7,9 @@ ShowShareButtons: true
 ShareButtons: ["facebook", "linkedin", "email"]
 ---
 
-# ABOUT ME
-
 ![Lê Minh Thanh](/LTM/images/profile-portrait.png)
 
-Mình là **Lê Minh Thanh** – Sinh viên tại **Đại học Công nghệ TP.HCM (HUTECH)**. Chào mừng bạn đến với góc nhỏ của mình – nơi mình chia sẻ niềm đam mê với **Lập Trình Mạng** và **Hệ Thống **.
+Mình là **Lê Minh Thanh** – Sinh viên tại **Đại học Công nghệ TP.HCM (HUTECH)**. Chào mừng bạn đến với góc nhỏ của mình – nơi mình chia sẻ niềm đam mê với **Lập Trình Mạng** và **Công nghệ thông tin**.
 
 ---
 
@@ -23,7 +21,7 @@ Mình là **Lê Minh Thanh** – Sinh viên tại **Đại học Công nghệ TP
 ---
 
 ### 🛠️ Kỹ năng 
-- **Ngôn ngữ**: Java, JavaScript, C++, SQL.
+- **Ngôn ngữ**: Java, JavaScript, C++, Html, CSS, SQL.
 - **Lập trình Mạng**: Socket Programming (TCP/UDP), WebSockets, RMI.
 - **Hệ thống**: Multithreading, Concurrency, Distributed Computing.
 - **Công nghệ/Framework**: Spring Boot, Node.js, Hugo (Static Site).

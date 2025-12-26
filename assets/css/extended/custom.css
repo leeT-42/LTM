@@ -281,8 +281,8 @@ body.dark #menu li a,
 
 /* Fix for images in About page/Posts - centered and wider */
 .post-content img {
-    max-width: 600px;
-    /* Increased from 320px to match screenshot style */
+    max-width: 450px;
+    /* Adjusted for portrait photos to look balanced */
     width: 100%;
     height: auto;
     border-radius: 12px;
