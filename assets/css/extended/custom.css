@@ -287,23 +287,25 @@ body.dark #menu li a,
 }
 
 .profile img {
-    border-radius: 50%;
+    border-radius: 50% !important;
     width: 200px;
     height: 200px;
-    object-fit: cover;
+    object-fit: cover !important;
+    /* Forces perfect circle */
     transition: transform 0.3s ease;
     animation: profileFloat 5s ease-in-out infinite;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transform: scale(1.6);
+    /* Centers and crops the "Hello" text perfectly */
+    display: inline-block;
 
     /* Background Extraction */
     mix-blend-mode: multiply;
-    /* Removes white background */
-    transform: scale(1.4);
-    /* Zoom in to crop margins */
+    /* Removes white background in light mode */
 }
 
-/* Force perfect circle for portraits in About/Posts */
-.post-content img {
+/* Force perfect circle for portraits in About/Posts, but ignore diagrams */
+.post-content img[src*="portrait"],
+.post-content img[src*="profile"] {
     width: 320px;
     height: 320px;
     object-fit: cover;
@@ -325,7 +327,8 @@ body.dark #menu li a,
 
 
 .profile img:hover {
-    transform: scale(1.05);
+    transform: scale(1.7);
+    /* Slightly zoom in from base 1.6 */
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
 }
 

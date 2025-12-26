@@ -17,8 +17,6 @@ summaryLength = 10
 
   [params.label]
     text = "Lê Minh Thanh"
-    icon = "images/brand-logo.png"
-    iconHeight = 35
 
   [params.assets]
     favicon = "/LTM/images/favicon.png"
@@ -35,7 +33,7 @@ summaryLength = 10
 
 Blog cá nhân - Nơi kết nối và cùng nhau phát triển!
 """
-    imageUrl = "images/brand-logo.png"
+    imageUrl = "images/hello-profile.png"
     imageTitle = "Hello"
     buttons = [
        { name = "🚀 KHÁM PHÁ NGAY", url = "posts" },
