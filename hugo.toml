@@ -18,6 +18,7 @@ theme = 'PaperMod'
     imageUrl = "https://github.com/leeT-42.png" 
     imageTitle = "Avatar"
     buttons = [
+       { name = "Home", url = "/LTM/" },
       { name = "Projects", url = "/LTM/projects" },
       { name = "Blog", url = "/LTM/posts" },
       { name = "About", url = "/LTM/about" },

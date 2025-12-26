@@ -1,0 +1,124 @@
+/* Teal Scheme */
+:root {
+    --primary: #00bfa5;
+    --gap: 24px;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8f9fa;
+    /* Light gray bg for contrast */
+}
+
+body.dark {
+    background-color: #1d1e20;
+}
+
+/* 2-Column Grid Layout for Main Section */
+.main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Post List as Grid */
+.post-entry {
+    background: var(--entry);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 0;
+    /* Remove default margin */
+    transition: transform 0.2s, box-shadow 0.2s;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Responsive Grid */
+@media screen and (min-width: 768px) {
+    .main .list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+}
+
+.post-entry:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Typography & Colors */
+.entry-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.entry-content {
+    color: #666;
+    font-size: 1rem;
+    flex-grow: 1;
+}
+
+/* Tags Styling */
+.entry-footer {
+    margin-top: 15px;
+}
+
+.entry-tags a {
+    background-color: rgba(0, 191, 165, 0.1);
+    color: var(--primary);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all 0.2s;
+}
+
+.entry-tags a:hover {
+    background-color: var(--primary);
+    color: white;
+}
+
+/* Profile Mode Override */
+.profile_inner img {
+    border: 4px solid var(--primary);
+    padding: 4px;
+    box-shadow: 0 10px 25px rgba(0, 191, 165, 0.2);
+}
+
+.profile h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+}
+
+body.dark .profile h1 {
+    color: #e0e0e0;
+}
+
+/* Header & Menu */
+.header {
+    background: transparent;
+    box-shadow: none;
+}
+
+.menu a {
+    font-weight: 600;
+}
+
+.menu a:hover {
+    color: var(--primary);
+}
+
+/* Pagination Buttons */
+.pagination a {
+    background: var(--primary);
+    color: white;
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-weight: bold;
+}
