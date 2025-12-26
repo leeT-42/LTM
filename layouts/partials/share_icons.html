@@ -1,0 +1,55 @@
+{{- $pageurl := .Permalink }}
+{{- $title := .Title }}
+
+{{- $.Scratch.Set "tags" ""}}
+
+{{- with .Params.Tags }}
+{{- $hashtags := newScratch}}
+{{- range . }}{{ $hashtags.Add "tags" (slice (replaceRE "(\\s)" "" . ))}}{{end}}
+{{- $.Scratch.Set "tags" (delimit ($hashtags.Get "tags") ",") }}
+{{- end -}}
+
+{{- $custom := false }}
+{{- $ShareButtons := (.Param "ShareButtons")}}
+{{- with $ShareButtons }}{{ $custom = true }}{{ end }}
+
+<ul class="share-buttons">
+    {{- if (cond ($custom) (in $ShareButtons "facebook") (true)) }}
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share {{ $title | plainify }} on facebook"
+            href="https://facebook.com/sharer/sharer.php?u={{ $pageurl }}">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px"
+                fill="currentColor">
+                <path
+                    d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-106.468,0l0,-192.915l66.6,0l12.672,-82.621l-79.272,0l0,-53.617c0,-22.603 11.073,-44.636 46.58,-44.636l36.042,0l0,-70.34c0,0 -32.71,-5.582 -63.982,-5.582c-65.288,0 -107.96,39.569 -107.96,111.204l0,62.971l-72.573,0l0,82.621l72.573,0l0,192.915l-191.104,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Z" />
+            </svg>
+        </a>
+    </li>
+    {{- end }}
+
+    {{- if (cond ($custom) (in $ShareButtons "linkedin") (true)) }}
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share {{ $title | plainify }} on linkedin"
+            href="https://www.linkedin.com/shareArticle?mini=true&amp;url={{ $pageurl }}&amp;title={{ $title }}&amp;summary={{ $title }}&amp;source={{ $pageurl }}">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px"
+                fill="currentColor">
+                <path
+                    d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-288.985,423.278l0,-225.717l-75.04,0l0,225.717l75.04,0Zm270.539,0l0,-129.439c0,-69.333 -37.018,-101.586 -86.381,-101.586c-39.804,0 -57.634,21.891 -67.617,37.266l0,-31.958l-75.021,0c0.995,21.181 0,225.717 0,225.717l75.02,0l0,-126.056c0,-6.748 0.486,-13.492 2.474,-18.315c5.414,-13.475 17.767,-27.434 38.494,-27.434c27.135,0 38.007,20.707 38.007,51.037l0,120.768l75.024,0Zm-307.552,-334.556c-25.674,0 -42.448,16.879 -42.448,39.002c0,21.658 16.264,39.002 41.455,39.002l0.484,0c26.165,0 42.452,-17.344 42.452,-39.002c-0.485,-22.092 -16.241,-38.954 -41.943,-39.002Z" />
+            </svg>
+        </a>
+    </li>
+    {{- end }}
+
+    {{- if (cond ($custom) (in $ShareButtons "email") (true)) }}
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share {{ $title | plainify }} via email"
+            href="mailto:?subject={{ $title }}&amp;body={{ $pageurl }}">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px"
+                fill="currentColor">
+                <path
+                    d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-60.672,130.638l-265.551,0c-23.71,0 -42.923,19.222 -42.923,42.915c0,7.185 1.764,13.911 4.908,19.851l128.423,128.435c24.303,24.3 63.693,24.272 87.971,-0.02l128.077,-128.324c4.896,-8.799 7.643,-18.905 7.643,-29.626c-0.003,-23.704 -19.231,-42.949 -42.951,-42.949l-5.597,-0.282Zm-292.836,88.706l-0.088,157.942l98.665,-98.668l-98.577,-59.274Zm235.334,-16.92l-98.816,99.009l98.816,59.182l0,-158.191Zm-26.069,173.498l-72.298,72.435c-20.913,20.957 -54.858,20.941 -75.761,-0.024l-71.91,-72.261l-0.612,143.518c0,13.623 11.084,24.707 24.707,24.707l265.551,0c13.619,0 24.703,-11.084 24.703,-24.707l0.024,-143.913l-94.404,0.245Z" />
+            </svg>
+        </a>
+    </li>
+    {{- end }}
+</ul>

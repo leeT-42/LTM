@@ -1,0 +1,55 @@
+{{- define "main" }}
+
+{{- if site.Params.profileMode.enabled }}
+{{- partial "index_profile.html" . }}
+{{- end }}
+
+{{- $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
+{{- if not $pages }}
+{{- $pages = where site.RegularPages "Section" "posts" }}
+{{- end }}
+{{- $pages = where $pages "Params.hiddenInHomeList" "!=" "true" }}
+{{- $latest_pages := $pages | first 2 }}
+
+{{- if gt (len $latest_pages) 0 }}
+<div class="home-posts-section">
+    <h2 class="section-title">CÁC BÀI VIẾT NỔI BẬT</h2>
+    <div class="home-posts-grid">
+        {{- range $latest_pages }}
+        <article class="home-post-card">
+            {{- $isHidden := (.Param "cover.hiddenInList") | default (.Param "cover.hidden") | default false }}
+            {{- if not $isHidden }}
+            {{- partial "cover.html" (dict "cxt" . "IsSingle" false "isHidden" $isHidden) }}
+            {{- end }}
+
+            <div class="card-content">
+                <header class="entry-header">
+                    <h2 class="entry-title">
+                        <a href="{{ .Permalink }}">{{ .Title | upper }}</a>
+                    </h2>
+                </header>
+
+                <div class="entry-meta">
+                    {{- if not (.Param "hideMeta") }}
+                    <em>By {{ .Params.author | default site.Author.name | default "Thanh" }} on {{ .Date.Format (default
+                        "January 2, 2006" site.Params.DateFormat) }}</em>
+                    {{- end }}
+                </div>
+
+                {{- if (ne (.Param "hideSummary") true) }}
+                <div class="entry-summary">
+                    <p>{{ .Summary | plainify | htmlUnescape | truncate 160 }}{{ if .Truncated }}...{{ end }}</p>
+                </div>
+                {{- end }}
+
+                <footer class="entry-footer">
+                    <a class="continue-reading" href="{{ .Permalink }}">Continue Reading</a>
+                </footer>
+            </div>
+        </article>
+        {{- end }}
+    </div>
+</div>
+{{- end }}
+
+{{- end }}

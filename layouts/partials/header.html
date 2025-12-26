@@ -1,0 +1,227 @@
+{{- /* theme-toggle is enabled */}}
+{{- if (not site.Params.disableThemeToggle) }}
+{{- /* ... */}}
+{{- end }}
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            {{- $label_text := (site.Params.label.text | default site.Title) }}
+            {{- if site.Title }}
+            <a href="{{ "" | absLangURL }}" accesskey="h" title="{{ $label_text }} (Alt + H)">
+                {{- if site.Params.label.icon }}
+                {{- $img := resources.Get site.Params.label.icon }}
+                {{- if $img }}
+                {{- $processableFormats := (slice "jpg" "jpeg" "png" "tif" "bmp" "gif") -}}
+                {{- if hugo.IsExtended -}}
+                {{- $processableFormats = $processableFormats | append "webp" -}}
+                {{- end -}}
+                {{- $prod := (hugo.IsProduction | or (eq site.Params.env "production")) }}
+                {{- if and (in $processableFormats $img.MediaType.SubType) (eq $prod true)}}
+                {{- if site.Params.label.iconHeight }}
+                {{- $img = $img.Resize (printf "x%d" site.Params.label.iconHeight) }}
+                {{ else }}
+                {{- $img = $img.Resize "x30" }}
+                {{- end }}
+                {{- end }}
+                <img src="{{ $img.Permalink }}" alt="" aria-label="logo"
+                    height="{{- site.Params.label.iconHeight | default " 30" -}}">
+                {{- else }}
+                <img src="{{- site.Params.label.icon | absURL -}}" alt="" aria-label="logo"
+                    height="{{- site.Params.label.iconHeight | default " 30" -}}">
+                {{- end -}}
+                {{- else if hasPrefix site.Params.label.iconSVG "<svg" }} {{ site.Params.label.iconSVG | safeHTML }} {{-
+                    end -}} {{- $label_text -}} </a>
+                    {{- end }}
+
+        </div>
+        {{- $currentPage := . }}
+        <ul id="menu">
+            {{- range site.Menus.main }}
+            {{- $menu_item_url := (cond (strings.HasSuffix .URL "/") .URL (printf "%s/" .URL) ) | absLangURL }}
+            {{- $page_url:= $currentPage.Permalink | absLangURL }}
+            {{- $is_search := eq (site.GetPage .KeyName).Layout `search` }}
+            <li {{- if eq .Identifier "search" }} style="position: relative;" {{- end }}>
+                {{- if eq .Identifier "search" }}
+                <div class="search-container" style="display: flex; align-items: center;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        style="margin-right: 5px; cursor: pointer;"
+                        onclick="document.getElementById('header-search-input').focus();">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                    <input id="header-search-input" type="text" placeholder="Tìm kiếm..."
+                        style="border: none; background: transparent; color: inherit; font-size: 16px; outline: none; width: 100px; transition: width 0.3s;"
+                        onfocus="this.style.width='250px'; fetchSearchIndex();"
+                        onblur="setTimeout(() => { this.style.width='100px'; document.getElementById('header-search-results').style.display='none'; }, 200)"
+                        oninput="searchPosts(this.value)" onkeydown="handleSearchKeydown(event, this)">
+                </div>
+                <!-- Inline Search Results Dropdown -->
+                <ul id="header-search-results"
+                    style="display: none; position: absolute; top: 100%; right: 0; background: var(--entry); border: 1px solid var(--border); border-radius: 5px; width: 300px; max-height: 400px; overflow-y: auto; z-index: 1000; box-shadow: 0 4px 6px rgba(0,0,0,0.1); list-style: none; padding: 0; margin-top: 10px;">
+                    <!-- Results injected here -->
+                </ul>
+                {{- else }}
+                <a href="{{ .URL | absLangURL }}" title="{{ .Title | default .Name }} {{- cond $is_search (" (Alt + /)"
+                    | safeHTMLAttr) ("" | safeHTMLAttr ) }}" {{- cond $is_search (" accesskey=/" | safeHTMLAttr) ("" |
+                    safeHTMLAttr ) }}>
+                    <span {{- if eq $menu_item_url $page_url }} class="active" {{- end }}>
+                        {{- .Pre }}
+                        {{- .Name -}}
+                        {{ .Post -}}
+                    </span>
+                    {{- if (findRE "://" .URL) }}&nbsp;
+                    <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12">
+                        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+                        <path d="M15 3h6v6"></path>
+                        <path d="M10 14L21 3"></path>
+                    </svg>
+                    {{- end }}
+                </a>
+                {{- end }}
+            </li>
+            {{- end }}
+        </ul>
+        <div class="logo-switches">
+            {{- if (not site.Params.disableThemeToggle) }}
+            <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+                <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+            </button>
+            {{- end }}
+
+            {{- if (not site.Params.disableLangToggle) }}
+            {{- $lang := .Lang}}
+            {{- $separator := or $label_text (not site.Params.disableThemeToggle)}}
+            {{- with site.Home.Translations }}
+            <ul class="lang-switch">
+                {{- if $separator }}<li>|</li>{{ end }}
+                {{- range . -}}
+                {{- if ne $lang .Lang }}
+                <li>
+                    <a href="{{- .Permalink -}}"
+                        title="{{ .Language.Params.languageAltTitle | default (.Language.LanguageName | emojify) | default (.Lang | title) }}"
+                        aria-label="{{ .Language.LanguageName | default (.Lang | title) }}">
+                        {{- if (and site.Params.displayFullLangName (.Language.LanguageName)) }}
+                        {{- .Language.LanguageName | emojify -}}
+                        {{- else }}
+                        {{- .Lang | title -}}
+                        {{- end -}}
+                    </a>
+                </li>
+                {{- end -}}
+                {{- end}}
+            </ul>
+            {{- end }}
+            {{- end }}
+        </div>
+    </nav>
+</header>
+
+<script>
+    let searchIndex = [];
+    let firstResultUrl = null;
+
+    async function fetchSearchIndex() {
+        if (searchIndex.length > 0) return;
+        try {
+            const response = await fetch('{{ "index.json" | absLangURL }}');
+            searchIndex = await response.json();
+            console.log("Search index loaded", searchIndex.length);
+        } catch (e) {
+            console.error("Failed to load search index", e);
+        }
+    }
+
+    function searchPosts(query) {
+        const resultsContainer = document.getElementById('header-search-results');
+        firstResultUrl = null;
+
+        if (!query || query.trim().length === 0) {
+            resultsContainer.style.display = 'none';
+            return;
+        }
+
+        const lowerQuery = query.toLowerCase();
+
+        // Simple filter based on title or content
+        const results = searchIndex.filter(item => {
+            return (item.title && item.title.toLowerCase().includes(lowerQuery)) ||
+                (item.content && item.content.toLowerCase().includes(lowerQuery));
+        });
+
+        if (results.length > 0) {
+            resultsContainer.innerHTML = '';
+            firstResultUrl = results[0].permalink; // Store first result for Enter key
+
+            results.slice(0, 5).forEach(item => { // Limit to 5 results
+                const li = document.createElement('li');
+                li.style.padding = '10px';
+                li.style.borderBottom = '1px solid var(--border)';
+                li.style.cursor = 'pointer';
+
+                const title = document.createElement('div');
+                title.style.fontWeight = 'bold';
+                title.style.fontSize = '14px';
+                title.textContent = item.title;
+
+                li.appendChild(title);
+
+                li.onmouseover = () => { li.style.background = 'var(--tertiary)'; };
+                li.onmouseout = () => { li.style.background = 'transparent'; };
+
+                li.onclick = () => {
+                    window.location.href = item.permalink;
+                };
+
+                resultsContainer.appendChild(li);
+            });
+            resultsContainer.style.display = 'block';
+        } else {
+            resultsContainer.style.display = 'none';
+        }
+    }
+
+    function handleSearchKeydown(event, input) {
+        if (event.key === 'Enter') {
+            event.preventDefault();
+            if (firstResultUrl) {
+                window.location.href = firstResultUrl;
+            } else {
+                window.location.href = '{{ "search" | absLangURL }}/?q=' + encodeURIComponent(input.value);
+            }
+        }
+    }
+
+    // --- Smart Header Hide on Scroll ---
+    let lastScrollTop = 0;
+    const header = document.querySelector('.header');
+
+    window.addEventListener('scroll', function () {
+        let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        if (scrollTop > lastScrollTop && scrollTop > 100) {
+            // Scroll Down > 100px -> Hide
+            header.classList.add('header-hidden');
+        } else {
+            // Scroll Up -> Show
+            header.classList.remove('header-hidden');
+        }
+        lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
+    });
+</script>

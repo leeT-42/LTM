@@ -2,55 +2,68 @@ baseURL = 'https://leeT-42.github.io/LTM/'
 languageCode = 'vi'
 title = 'Lê Minh Thanh'
 theme = 'PaperMod'
+summaryLength = 10
 
 [params]
   defaultTheme = "auto"
-  ShowReadingTime = true
-  ShowShareButtons = true
+  ShowReadingTime = false
+  ShowShareButtons = false
+  ShareButtons = ["linkedin", "email"]
   ShowPostNavLinks = true
   ShowBreadCrumbs = true
   ShowCodeCopyButtons = true
+  ShowWordCount = false
+  hideMeta = true
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
   
   [params.profileMode]
     enabled = true
-    title = "Lê Minh Thanh"
-    subtitle = "Developer | Network Enthusiast | Java Learner"
-    imageUrl = "https://github.com/leeT-42.png" 
-    imageTitle = "Avatar"
+    title = "Chào mừng đến với Blog của Lê Minh Thanh 👋"
+    subtitle = """
+Đam mê chia sẻ kiến thức thực chiến về:
+- 🌐 **Lập trình Mạng** | ⚡ **Multithreading** | 🏛️ **Hệ thống Phân tán**
+
+Blog cá nhân - Nơi kết nối và cùng nhau phát triển!
+"""
+    imageUrl = "images/hello-profile.png"
+    imageTitle = "Hello"
     buttons = [
-       { name = "Home", url = "/LTM/" },
-      { name = "Projects", url = "/LTM/projects" },
-      { name = "Blog", url = "/LTM/posts" },
-      { name = "About", url = "/LTM/about" },
+       { name = "🚀 KHÁM PHÁ NGAY", url = "posts" },
+       { name = "📂 DỰ ÁN CỦA TÔI", url = "projects" },
     ]
 
-  [[params.socialIcons]]
-    name = "Github"
-    url = "https://github.com/leeT-42"
-  [[params.socialIcons]]
-    name = "Email"
-    url = "mailto:leminhthanh931@gmail.com"
-    # Facebook = "https://facebook.com/username" 
-    # LinkedIn = "https://linkedin.com/in/username"
-
+ 
 [menu]
   [[menu.main]]
     identifier = "home"
     name = "Home"
+    pre = "🏠 "
     pageRef = "/"
     weight = 10
   [[menu.main]]
     identifier = "projects"
     name = "Projects"
+    pre = "📽️ "
     pageRef = "projects"
     weight = 15
   [[menu.main]]
     identifier = "blog"
     name = "Blog"
+    pre = "📰 "
     pageRef = "posts"
     weight = 20
   [[menu.main]]
     identifier = "about"
     name = "About"
+    pre = "👨‍💻 "
     pageRef = "about"
     weight = 30
+  [[menu.main]]
+    identifier = "search"
+    name = "Search"
+    pageRef = "search"
+    weight = 5
+  
+disqusShortname = 'leminhthanh-ltm'
