@@ -1,5 +1,4 @@
 ---
-title: "Về mình"
 
 summary: "about"
 comments: true
