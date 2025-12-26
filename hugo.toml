@@ -17,7 +17,7 @@ summaryLength = 10
 
   [params.label]
     text = "Lê Minh Thanh"
-    icon = "/images/logo.png"
+    icon = "images/logo.png"
     iconHeight = 35
 
   [params.assets]

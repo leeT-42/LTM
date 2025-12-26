@@ -22,21 +22,34 @@ body.dark .logo a,
     /* Fallback */
 }
 
-/* Artistic Logo Text - Fade Effect */
+/* Artistic Logo Text */
 .logo a {
     font-size: 24px;
-    /* Ensure it's large enough */
     font-weight: 800;
-    /* Bold/Black weight */
     background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0.5) 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-decoration: none;
-    /* No underline */
+    display: flex;
+    align-items: center;
 }
 
-/* Dark Mode Logo - Targeting HTML, Body, and Generic .dark class */
+.logo img {
+    border-radius: 50% !important;
+    width: 38px !important;
+    height: 38px !important;
+    object-fit: cover !important;
+    background: transparent !important;
+    margin-right: 12px;
+    /* Blend mode effectively "hides" the white background */
+    mix-blend-mode: multiply;
+    /* Zoom in slightly to ensure any edge white from the AI image is cropped */
+    transform: scale(1.6);
+    display: inline-block;
+}
+
+/* Dark Mode Logo Styling */
 html.dark .logo a,
 body.dark .logo a,
 .dark .logo a {
@@ -44,9 +57,14 @@ body.dark .logo a,
     background-clip: text !important;
     -webkit-background-clip: text !important;
     -webkit-text-fill-color: transparent !important;
-    color: white !important;
-    /* Fallback */
 }
+
+.dark .logo img {
+    filter: invert(1) hue-rotate(180deg);
+    mix-blend-mode: screen;
+    /* Removes black background in dark mode */
+}
+
 
 #menu {
     flex-grow: 1;
