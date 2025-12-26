@@ -10,7 +10,7 @@ ShareButtons: ["facebook", "linkedin", "email"]
 
 # Lê Minh Thanh 👋
 
-![Lê Minh Thanh](images/hello-profile.png)
+![Lê Minh Thanh](images/profile-thanh.png)
 
 Chào mừng bạn đến với góc nhỏ của mình – nơi mình chia sẻ niềm đam mê với **Lập Trình Mạng** và **Hệ Thống Phân Tán**.
 
