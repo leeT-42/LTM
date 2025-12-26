@@ -1,6 +1,6 @@
 baseURL = 'https://leeT-42.github.io/LTM/'
 languageCode = 'vi'
-title = 'Lê Minh Thành'
+title = 'Lê Minh Thanh'
 theme = 'PaperMod'
 
 [params]
@@ -13,7 +13,7 @@ theme = 'PaperMod'
   
   [params.profileMode]
     enabled = true
-    title = "Lê Minh Thành"
+    title = "Lê Minh Thanh"
     subtitle = "Developer | Network Enthusiast | Java Learner"
     imageUrl = "https://github.com/leeT-42.png" 
     imageTitle = "Avatar"
@@ -41,15 +41,15 @@ theme = 'PaperMod'
   [[menu.main]]
     identifier = "projects"
     name = "Projects"
-    url = "/LTM/projects"
+    pageRef = "projects"
     weight = 15
   [[menu.main]]
     identifier = "blog"
     name = "Blog"
-    url = "/LTM/posts"
+    pageRef = "posts"
     weight = 20
   [[menu.main]]
     identifier = "about"
     name = "About"
-    url = "/LTM/about"
+    pageRef = "about"
     weight = 30
