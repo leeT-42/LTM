@@ -279,14 +279,15 @@ body.dark #menu li a,
     animation: profileFloat 5s ease-in-out infinite;
 }
 
-/* Fix for images in About page/Posts - centered and wider */
+/* Fix for images in About page/Posts - centered and neater */
 .post-content img {
     max-width: 320px;
-    /* Reduced for a neater portrait look */
     width: 100%;
     height: auto;
+    border-radius: 16px;
+    /* Smooth professional corners */
+    border: none;
     margin: 1.5rem auto;
-    /* Center the image */
     display: block;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
