@@ -15,6 +15,14 @@ summaryLength = 10
   ShowWordCount = false
   hideMeta = true
 
+  [params.label]
+    text = "Lê Minh Thanh"
+    icon = "/images/logo.png"
+    iconHeight = 35
+
+  [params.assets]
+    favicon = "/LTM/images/favicon.png"
+
 [outputs]
   home = ["HTML", "RSS", "JSON"]
   
