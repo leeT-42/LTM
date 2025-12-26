@@ -281,11 +281,10 @@ body.dark #menu li a,
 
 /* Fix for images in About page/Posts - centered and wider */
 .post-content img {
-    max-width: 450px;
-    /* Adjusted for portrait photos to look balanced */
+    max-width: 320px;
+    /* Reduced for a neater portrait look */
     width: 100%;
     height: auto;
-    border-radius: 12px;
     margin: 1.5rem auto;
     /* Center the image */
     display: block;
