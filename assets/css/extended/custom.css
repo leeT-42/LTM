@@ -270,24 +270,27 @@ body.dark #menu li a,
 
 .profile img {
     border-radius: 50%;
-    width: 180px;
-    height: 180px;
+    width: 200px;
+    /* Square size */
+    height: 200px;
     object-fit: contain;
+    /* Keep the logo visible */
+    padding: 10px;
+    /* Add some space around logo within circle */
+    background: transparent;
     mix-blend-mode: multiply;
-    /* Blends white background into light mode */
     transition: transform 0.3s ease;
     animation: profileFloat 5s ease-in-out infinite;
 }
 
-/* Fix for images in About page/Posts - centered and neater */
+/* Force perfect circle for portraits in About/Posts */
 .post-content img {
-    max-width: 320px;
-    width: 100%;
-    height: auto;
-    border-radius: 16px;
-    /* Smooth professional corners */
-    border: none;
-    margin: 1.5rem auto;
+    width: 320px;
+    height: 320px;
+    object-fit: cover;
+    /* Crop to perfect circle */
+    border-radius: 50%;
+    margin: 2rem auto;
     display: block;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
