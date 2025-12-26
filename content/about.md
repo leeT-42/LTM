@@ -7,11 +7,11 @@ ShowShareButtons: true
 ShareButtons: ["facebook", "linkedin", "email"]
 ---
 
-# Lê Minh Thanh 👋
+# ABOUT ME
 
 ![Lê Minh Thanh](/LTM/images/profile-portrait.png)
 
-Chào mừng bạn đến với góc nhỏ của mình – nơi mình chia sẻ niềm đam mê với **Lập Trình Mạng** và **Hệ Thống Phân Tán**.
+Mình là **Lê Minh Thanh** – Sinh viên tại **Đại học Công nghệ TP.HCM (HUTECH)**. Chào mừng bạn đến với góc nhỏ của mình – nơi mình chia sẻ niềm đam mê với **Lập Trình Mạng** và **Hệ Thống **.
 
 ---
 
@@ -22,21 +22,12 @@ Chào mừng bạn đến với góc nhỏ của mình – nơi mình chia sẻ 
 
 ---
 
-### 🛠️ Kỹ năng chuyên môn
+### 🛠️ Kỹ năng 
 - **Ngôn ngữ**: Java, JavaScript, C++, SQL.
 - **Lập trình Mạng**: Socket Programming (TCP/UDP), WebSockets, RMI.
 - **Hệ thống**: Multithreading, Concurrency, Distributed Computing.
 - **Công nghệ/Framework**: Spring Boot, Node.js, Hugo (Static Site).
 
----
-
-### 🚀 Triết lý công việc
-Mình theo đuổi triết lý **"Thực chiến & Tận gốc"**:
-*   **Thực chiến**: Mọi kiến thức phải được chứng minh bằng code chạy thực tế.
-*   **Tận gốc**: Hiểu rõ cơ chế bên dưới (socket, gói tin) thay vì chỉ dùng thư viện.
-*   **Chia sẻ**: Lan tỏa kiến thức để cùng nhau phát triển.
-
----
 
 ### 📫 Thông tin liên hệ
 - **Email**: [leminhthanh931@gmail.com](mailto:leminhthanh931@gmail.com)
