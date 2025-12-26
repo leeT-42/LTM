@@ -17,6 +17,8 @@ summaryLength = 10
 
   [params.label]
     text = "Lê Minh Thanh"
+    icon = "images/brand-logo.png"
+    iconHeight = 35
 
   [params.assets]
     favicon = "/LTM/images/favicon.png"
@@ -26,7 +28,7 @@ summaryLength = 10
   
   [params.profileMode]
     enabled = true
-    title = "Chào mừng đến với Blog của Lê Minh Thanh 👋"
+    title = "Chào mừng đến với Blog của Lê Minh Thanh"
     subtitle = """
 Đam mê chia sẻ kiến thức thực chiến về:
 - 🌐 **Lập trình Mạng** | ⚡ **Công nghệ thông tin** | 🏛️ **Hệ thống**

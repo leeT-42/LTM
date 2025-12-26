@@ -31,6 +31,22 @@ body.dark .logo a,
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    border-radius: 50% !important;
+    width: 32px !important;
+    height: 32px !important;
+    object-fit: cover !important;
+    background: transparent !important;
+    margin-right: 12px;
+    mix-blend-mode: multiply;
+    /* Removes white background in light mode */
+    transform: scale(1.4);
+    /* Zoom in to crop out AI-generated margins */
+    display: inline-block;
 }
 
 /* Dark Mode Logo Styling */
@@ -41,6 +57,12 @@ body.dark .logo a,
     background-clip: text !important;
     -webkit-background-clip: text !important;
     -webkit-text-fill-color: transparent !important;
+}
+
+.dark .logo img {
+    filter: invert(1) hue-rotate(180deg);
+    mix-blend-mode: screen;
+    /* Removes black background in dark mode */
 }
 
 
