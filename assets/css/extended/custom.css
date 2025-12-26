@@ -289,13 +289,17 @@ body.dark #menu li a,
 .profile img {
     border-radius: 50%;
     width: 200px;
-    /* Square size */
     height: 200px;
     object-fit: cover;
-    /* Fill the circle with the image background */
     transition: transform 0.3s ease;
     animation: profileFloat 5s ease-in-out infinite;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+
+    /* Background Extraction */
+    mix-blend-mode: multiply;
+    /* Removes white background */
+    transform: scale(1.4);
+    /* Zoom in to crop margins */
 }
 
 /* Force perfect circle for portraits in About/Posts */
@@ -314,6 +318,9 @@ body.dark #menu li a,
 .dark .profile img {
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
     border: 2px solid rgba(255, 255, 255, 0.1);
+    filter: invert(1) hue-rotate(180deg);
+    mix-blend-mode: screen;
+    /* Removes black background in dark mode */
 }
 
 
