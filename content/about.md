@@ -9,7 +9,7 @@ ShareButtons: ["facebook", "linkedin", "email"]
 
 ![Lê Minh Thanh](/LTM/images/profile-portrait.png)
 
-Mình là **Lê Minh Thanh** – Sinh viên tại **Đại học Công nghệ TP.HCM (HUTECH)**. Chào mừng bạn đến với góc nhỏ của mình – nơi mình chia sẻ niềm đam mê với **Lập Trình Mạng** và **Công nghệ thông tin**.
+Mình là **Lê Minh Thanh** – Sinh viên tại **Đại học Công nghệ TP.HCM (HUTECH)**. Chào mừng bạn đến với góc nhỏ của mình – nơi mình chia sẻ niềm đam mê với **Lập Trình Mạng** và **Hệ thống**.
 
 ---
 

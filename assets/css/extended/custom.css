@@ -273,14 +273,11 @@ body.dark #menu li a,
     width: 200px;
     /* Square size */
     height: 200px;
-    object-fit: contain;
-    /* Keep the logo visible */
-    padding: 10px;
-    /* Add some space around logo within circle */
-    background: transparent;
-    mix-blend-mode: multiply;
+    object-fit: cover;
+    /* Fill the circle with the image background */
     transition: transform 0.3s ease;
     animation: profileFloat 5s ease-in-out infinite;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 /* Force perfect circle for portraits in About/Posts */
@@ -297,9 +294,8 @@ body.dark #menu li a,
 
 
 .dark .profile img {
-    filter: invert(1) hue-rotate(180deg);
-    mix-blend-mode: screen;
-    /* Blends dark background into dark mode */
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+    border: 2px solid rgba(255, 255, 255, 0.1);
 }
 
 
