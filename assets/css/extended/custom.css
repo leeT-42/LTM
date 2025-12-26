@@ -271,10 +271,10 @@ body.dark #menu li a,
 .profile img {
     border-radius: 50%;
     width: 200px;
-    /* Slightly larger for portrait */
+    /* Slightly larger for the real photo */
     height: 200px;
     object-fit: cover;
-    border: 4px solid #fff;
+    border: 5px solid white;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     animation: profileFloat 5s ease-in-out infinite;
@@ -282,7 +282,7 @@ body.dark #menu li a,
 
 .dark .profile img {
     border-color: rgba(255, 255, 255, 0.1);
-    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
 }
 
 

@@ -27,8 +27,8 @@ summaryLength = 10
 
 Blog cá nhân - Nơi kết nối và cùng nhau phát triển!
 """
-    imageUrl = "images/profile-thanh.png"
-    imageTitle = "Lê Minh Thanh"
+    imageUrl = "images/profile-portrait.png"
+    imageTitle = "Hello"
     buttons = [
        { name = "🚀 KHÁM PHÁ NGAY", url = "posts" },
        { name = "📂 DỰ ÁN CỦA TÔI", url = "projects" },
