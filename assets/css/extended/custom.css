@@ -269,18 +269,17 @@ body.dark #menu li a,
 }
 
 .profile img {
-    border-radius: 28px;
-    width: 200px;
-    /* Reduced further for a more compact look */
-    height: auto;
-    object-fit: cover;
-    border: 4px solid white;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+    mix-blend-mode: multiply;
+    /* Blends white background into light mode */
+    transition: transform 0.3s ease;
     animation: profileFloat 5s ease-in-out infinite;
 }
 
-/* Fix for large portrait images in About page/Posts */
+/* Maintain professional frame for real photos in posts/about */
 .post-content img {
     max-width: 320px;
     /* Prevent massive wide-full portraits */
@@ -295,8 +294,9 @@ body.dark #menu li a,
 
 
 .dark .profile img {
-    border-color: rgba(255, 255, 255, 0.1);
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+    filter: invert(1) hue-rotate(180deg);
+    mix-blend-mode: screen;
+    /* Blends dark background into dark mode */
 }
 
 

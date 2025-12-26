@@ -27,7 +27,7 @@ summaryLength = 10
 
 Blog cá nhân - Nơi kết nối và cùng nhau phát triển!
 """
-    imageUrl = "images/profile-portrait.png"
+    imageUrl = "images/hello-profile.png"
     imageTitle = "Hello"
     buttons = [
        { name = "🚀 KHÁM PHÁ NGAY", url = "posts" },
